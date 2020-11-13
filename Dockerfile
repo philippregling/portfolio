@@ -10,7 +10,7 @@ COPY yarn.lock ./
 RUN yarn install
 
 COPY . ./
-RUN yarn build --mode
+RUN yarn build
 
 # stage: 2 — Webserver
 FROM nginx:mainline-alpine
