@@ -3,6 +3,17 @@ import Vuetify from 'vuetify'
 
 Vue.use(Vuetify)
 
-const opts = {}
-
-export default new Vuetify(opts)
+export default new Vuetify({
+  theme: {
+    options: { customProperties: true },
+    dark: true,
+    themes: {
+      light: {
+        primary: '#F3D25E'
+      },
+      dark: {
+        primary: '#F3D25E'
+      }
+    }
+  }
+})
